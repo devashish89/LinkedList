@@ -45,7 +45,7 @@ class LinkedList:
             return counter
 
     def insertAt(self, index, Node):
-        if index < 0 and index >= self.get_length():
+        if index < 0 or index >= self.get_length():
             raise Exception("index out of bounds")
         if index == 0:
             self.insertAtBeginning(Node)
